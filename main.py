@@ -6,9 +6,9 @@ if __name__ == "__main__":
     asignatura2 = Asignatura("Castellano", "Salon 201")
     grupo1 = Grupo()
 
-    print(asignatura1)
-    print(grupo1)
-    print(grupo1.grado)
+    print(asignatura1) #Matematicas remoto
+    print(grupo1) #grupo predeterminado
+    print(grupo1.grado) #grado 12
 
     grupo2 = Grupo("Grupo 5", [], ["Alejandro", "Carlos"])
 
@@ -19,14 +19,14 @@ if __name__ == "__main__":
     grupo4.agregarAlumno("Santiago", ["Jaime", "Pedro"])
     grupo5.agregarAlumno("Javier")
 
-    print(grupo3.listadoAlumnos)
-    print(grupo4.listadoAlumnos)
-    print(grupo5.listadoAlumnos)
+    print(grupo3.listadoAlumnos) # ["Kelly"]
+    print(grupo4.listadoAlumnos) # ["Jaime", "Pedro", "Santiago"]
+    print(grupo5.listadoAlumnos) # ["Javier"]
 
     grupo3.listadoAsignaturas(as1="Ciencias", as2="Quimica", as3="Ingles")
-    print(len(grupo3._asignaturas))
+    print(len(grupo3._asignaturas)) # 3
 
     Grupo.asignarNombre("Grado 1")
-    print(Grupo.grado)
+    print(Grupo.grado) #Grado 1
     Grupo.asignarNombre()
-    print(Grupo.grado)
+    print(Grupo.grado) # Grado 6
